@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="ar" dir="rt">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+
+    <title></title>
+    <style>
+        .restaurant-background {
+            background-image: url("bgf.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        /* .navbar-brand,.nav-link {
+      color: white;
+    } */
+    .navbar-brand, .nav-link {
+    color: white;
+    /* transition: color 0.3s; */
+  }
+  .navbar-brand{
+    font-family: Roboto, Arial, sans-serif;
+    /* transition: color 0.3s; */
+  }
+
+  .navbar-brand:hover,.nav-link:hover {
+    color: rgb(233, 167, 53);
+  }
+
+
+
+
+  .wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: inline;
+  place-items: center;
+}
+
+
+.typing-demo {
+  width: 31ch;
+  animation: typing 5s, blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  #box1 {
+    font-size: 40px; /* Decrease the font size for smaller screens */
+      line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 600px) {
+  /* Styles for screens up to 768px wide */
+  #box1 {
+    font-size: 20px; /* Decrease the font size for smaller screens */
+      line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 470px) {
+  /* Styles for screens up to 768px wide */
+  #box1 {
+    font-size: 20px; /* Decrease the font size for smaller screens */
+      line-height: 1.2;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: */
+  z-index: 999; 
+}
+      </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">⚔️ ⓕＯ𝓸𝓭丨𝑒 ⚔️</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">♕ඏ  нᗝ𝔪є  🎯</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/reservation.html">ᖇᗴᔕᗴᖇᐯᗩ丅Ꭵᗝᑎ</a>
+              </li>
+              
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ᗰᗴᑎᑌ
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vegetarian</a></li>
+                  <li><a class="dropdown-item" href="#">Non-Vegetarian</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Our Special</a></li>
+                </ul>
+              </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="/menu.html">ᗰᗴᑎᑌ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">𓂀 ℂ𝕠𝕟𝕥𝕒𝕔𝕥 𝕌𝕤 𓂀</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">ΔβØỮŦ ỮŞ</a>
+                </li>
+                
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"> -->
+              <!-- <button class="btn btn-outline-success mx-2" type="submit">LOGIN</button> -->
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning mx-2">Sign-up</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="download (2).jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>山乇ㄥ匚ㄖ爪乇  ㄒㄖ  千ㄖㄖᗪ丨乇.</h5>
+              <p>εα† , šﾚεεp, rεpεα†...!!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pizza.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>World's Best Pizza</h5>
+              <p>Explore a new and wide range of pizzas!!!</p>
+              <button class="btn btn-danger">Know More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="download.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tasty Italian Pastas.</h5>
+              <p>Enjoy all countries pasta only at this place!!!</p>
+              <button class="btn btn-danger">Know More</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="wrapper" >
+        <div class="typing-demo m-auto max-width-1 my-2" id="box1">
+          Ŵ€ŁĆØΜ€ €V€Ř¥ØŇ€ ŦØ ŦĦ€ ₣ØØĐƗ€.
+        </div>
+        </div>
+
+      
+
+      <div class="position-relative p-5 text-center text-muted bg-DARK border border-dashed rounded-5">
+        <!-- <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button> -->
+        <!-- <svg class="bi mt-1 mb-3" width="20" height="20"><use xlink:href="#check2-circle"></use></svg> -->
+        <div class="restaurant-background mt-1" data-aos="zoom-in" data-aos-duration="1000">
+        <h1 class="text-body-emphasis">Brief History About Us...</h1>
+        <p class=" mx-auto mb-4">
+            
+          The restaurant industry has a rich and diverse history that spans centuries and cultures. One such restaurant with a fascinating history is "FOODIE."<br><br>
+      
+          FOODIE opened its doors in the heart of Paris, France, in the late 19th century. It quickly became a popular gathering place for artists, writers, and intellectuals of the time. The restaurant's name, which translates to "The Beautiful Era," perfectly captured the spirit of the period known for its optimism, elegance, and artistic expression.<br><br>
+          
+          During its early years, FOODIE established itself as a hub for bohemian culture. The walls of the restaurant were adorned with paintings and photographs from renowned artists, creating an ambiance that blended creativity and culinary delights. It became a favored meeting spot for famous figures like Pablo Picasso, Ernest Hemingway, and Gertrude Stein.<br><br>
+          
+          Over the years, FOODIE witnessed many social and cultural shifts. It survived both World Wars and adapted to changing tastes and trends. Despite occasional struggles, the restaurant managed to maintain its allure and reputation for exquisite cuisine and warm hospitality.<br><br>
+          
+          FOODIE's menu showcased the finest French gastronomy, featuring classic dishes such as escargots, foie gras, and coq au vin. The restaurant's sommeliers curated an exceptional wine list, pairing each dish with the perfect vintage.<br><br>
+          
+          In recent times, FOODIE underwent a renovation, preserving its historical charm while incorporating modern elements. It continues to serve as a symbol of culinary excellence, celebrating the legacy of its past while embracing the demands of the present.<br><br>
+          
+          Today, FOODIE remains an iconic institution, welcoming patrons from around the world who seek to experience a piece of history while indulging in exceptional cuisine. It stands as a testament to the enduring power of gastronomy to bring people together and create memorable moments in the ever-evolving world of dining.<br><br>
+        </p>
+    </div>
+        <button type="button" class="btn btn-outline-danger">Read More....</button>
+
+      </div>
+      
+
+      
+     
+
+
+
+
+
+      <div class="container my-4">
+
+        <div class="container marketing" >
+            <div class="row">
+                <div class="col-lg-4" data-aos="slide-right" data-aos-duration="1000">
+                  <img src="1.jpeg">
+                
+                  <h2 class="fw-normal">Burger</h2>
+                  <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                  <p><a class="btn btn-danger" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="5.png">
+                  <h2 class="fw-normal">Pasteries</h2>
+                  <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                  <p><a class="btn btn-danger" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4" data-aos="slide-left" data-aos-duration="1000">
+                    <img src="6.png">
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                  <p><a class="btn btn-danger" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+              </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="slide-right" data-aos-duration="1000">
+                  <img src="1.jpeg">
+                
+                  <h2 class="fw-normal">Burger</h2>
+                  <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                  <p><a class="btn btn-danger" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4" data-aos="slide-up" data-aos-duration="1000">
+                    <img src="5.png">
+                  <h2 class="fw-normal">Pasteries</h2>
+                  <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                  <p><a class="btn btn-danger" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4" data-aos="slide-left" data-aos-duration="1000">
+                    <img src="6.png">
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                  <p><a class="btn btn-danger" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+              </div>
+        
+        
+            <!-- START THE FEATURETTES -->
+            <hr class="featurette-divider">
+        
+            <div class="row featurette" data-aos="slide-right" data-aos-duration="1000">
+              <div class="col-md-7" >
+                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+              </div>
+              <div class="col-md-5" >
+                <img src="food-menu-1.png">
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette" data-aos="slide-left" data-aos-duration="1000">
+              <div class="col-md-7 order-md-2" >
+                <h3 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img src="food-menu-2.png">
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette" data-aos="slide-right" data-aos-duration="1000">
+              <div class="col-md-7" >
+                <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+              </div>
+              <div class="col-md-5">
+                <img src="food-menu-3.png">
+              </div>
+              <hr class="featurette-divider">
+        
+              <div class="row featurette" data-aos="slide-left" data-aos-duration="1000">
+                <div class="col-md-7 order-md-2" >
+                  <h3 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+                  <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <img src="food-menu-2.png">
+                </div>
+              </div>
+              <hr class="featurette-divider">
+        
+            <div class="row featurette" data-aos="slide-right" data-aos-duration="1000">
+              <div class="col-md-7" >
+                <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+              </div>
+              <div class="col-md-5">
+                <img src="food-menu-3.png">
+              </div>
+              <hr class="featurette-divider">
+        
+              <div class="row featurette" data-aos="slide-left" data-aos-duration="1000">
+                <div class="col-md-7 order-md-2" >
+                  <h3 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+                  <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <img src="food-menu-2.png">
+                </div>
+              </div>
+
+
+            </div>
+        
+            <hr class="featurette-divider">
+            <!-- /END THE FEATURETTES -->
+        
+          </div>
+      </div>
+
+
+
+
+      <footer class="small bg-light">
+      <div class="container" data-aos="zoom-in">
+        <div class="container py-3 py-sm-5">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6>Quick links</h6>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Featured Product</a></li>
+                <li><a href="#">News letter</a></li>
+                <li><a href="#">My account</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6>Information</h6>
+              <ul class="list-unstyled">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Shipping &amp; returns</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6>Follow us</h6>
+              <ul class="list-unstyled">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <address>
+                <strong>IIT Bombay</strong><br />
+                Powaii<br />
+                Mumbai, Maharashtra<br />
+                <abbr title="Telephone">T:</abbr
+                ><a href="tel:+916202712403">+91 6202712403</a><br />
+                <abbr title="Mail">M:</abbr
+                ><a href="mailto:info@domain.com">info@blog.com</a>
+              </address>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-9">
+              <ul class="list-inline">
+                <li class="list-inline-item">&copy; 2023 Blog, Inc.</li>
+                <li class="list-inline-item">All rights reserved.</li>
+                <li class="list-inline-item">
+                  <a href="#">Terms of use and privacy policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="dropdown dropup p-0">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm dropdown-toggle"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Visit other sites:
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a href="#" class="dropdown-item">www.otherwebsite.com</a>
+                  <a href="#" class="dropdown-item">www.newwebsite.com</a>
+                  <a href="#" class="dropdown-item">www.oldwebsite.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
